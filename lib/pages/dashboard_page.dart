@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import '../controllers/client_controller.dart';
 import '../models/client.dart';
 import 'client_list_page.dart';
+import 'liste_dettes_page.dart';
 
 class DashboardPage extends StatefulWidget {
   @override
@@ -209,6 +210,19 @@ class _DashboardPageState extends State<DashboardPage> with SingleTickerProvider
       appBar: AppBar(
         title: const Text('Dashboard'),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout),
+            tooltip: 'Se déconnecter',
+            onPressed: () {
+              // Ici, ajoute ta logique de déconnexion
+              // Exemple : appeler la méthode logout de ton AuthController et naviguer vers la page login
+              // AuthController authController = Get.find<AuthController>();
+              // authController.logout();
+              Get.offAllNamed('/login');
+            },
+          ),
+        ],
       ),
       body: Obx(() {
         if (clientController.isLoading.value) {
@@ -353,11 +367,7 @@ class _DashboardPageState extends State<DashboardPage> with SingleTickerProvider
           } else if (index == 1) {
             // Accueil - déjà ici, rien à faire
           } else if (index == 2) {
-            Get.snackbar(
-              'Info',
-              'Page liste des dettes à implémenter',
-              snackPosition: SnackPosition.BOTTOM,
-            );
+            Get.to(() => ListeDettesPage(clients: clientController.clients));
           }
         },
       ),
