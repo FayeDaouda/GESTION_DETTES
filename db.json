@@ -1,0 +1,23 @@
+{
+    "clients": [
+      {
+        "id": 1,
+        "nom": "Daouda Faye",
+        "telephone": "770000000",
+        "adresse": "Dakar",
+        "dettes": [
+          {
+            "id": 1,
+            "date": "2025-06-17",
+            "montantDette": 1000,
+            "montantPaye": 400,
+            "paiements": [
+              { "id": 1, "montant": 200 },
+              { "id": 2, "montant": 200 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
