@@ -1,16 +1,34 @@
 # gestion_dettes
 
-A new Flutter project.
+**gestion_dettes** est une application Flutter pour la gestion des clients et de leurs dettes.  
+Cette application permet de lister les clients, d’ajouter des dettes à un client, et de visualiser le détail des dettes.
 
-## Getting Started
+---
+## ADMIN TEST
+Login: admin
+Mdp: admin123
 
-This project is a starting point for a Flutter application.
+## Fonctionnalités principales
 
-A few resources to get you started if this is your first Flutter project:
+- Lister tous les clients avec leurs informations (nom, téléphone, adresse).
+- Ajouter un nouveau client.
+- Visualiser la liste des dettes par client.
+- Ajouter une dette à un client avec date, montant total, montant payé.
+- Calcul automatique du montant restant à payer.
+- Interface simple et réactive avec gestion d’état via GetX.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+1. **Prérequis :**
+
+   - Flutter SDK installé ([Installation Flutter](https://flutter.dev/docs/get-started/install))
+   - Un IDE (Android Studio, VSCode, etc.)
+   - Un émulateur ou un appareil physique connecté
+
+2. **Cloner le dépôt :**
+
+   ```bash
+   git clone <URL_DU_DEPOT>
+   cd gestion_dettes
