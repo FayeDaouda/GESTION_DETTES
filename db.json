@@ -1,23 +1,71 @@
 {
     "clients": [
       {
-        "id": 1,
-        "nom": "Daouda Faye",
-        "telephone": "770000000",
+        "id": "1",
+        "nom": "Aliou Ndoye",
+        "telephone": "771234567",
         "adresse": "Dakar",
         "dettes": [
           {
-            "id": 1,
-            "date": "2025-06-17",
-            "montantDette": 1000,
-            "montantPaye": 400,
+            "date": "2025-06-01",
+            "montantDette": 10000,
             "paiements": [
-              { "id": 1, "montant": 200 },
-              { "id": 2, "montant": 200 }
+              {
+                "montant": 2000,
+                "date": "2025-06-05"
+              },
+              {
+                "montant": 3000,
+                "date": "2025-06-10"
+              }
             ]
+          },
+          {
+            "date": "2025-06-15",
+            "montantDette": 5000,
+            "paiements": []
+          },
+          {
+            "date": "2025-06-27",
+            "montantDette": 10000,
+            "montantPaye": 2000
           }
         ]
+      },
+      {
+        "id": "2",
+        "nom": "Fatou Diop",
+        "telephone": "780112233",
+        "adresse": "Thiès",
+        "dettes": []
+      },
+      {
+        "id": "dc41",
+        "nom": "Moussa",
+        "telephone": "11111111",
+        "adresse": "ass",
+        "dettes": []
+      },
+      {
+        "id": "88c4",
+        "nom": "Diarra Gaye",
+        "telephone": "777089085",
+        "adresse": "Sam",
+        "dettes": [
+          {
+            "date": "2025-06-25",
+            "montantDette": 15000,
+            "montantPaye": 4000,
+            "paiements": []
+          }
+        ]
+      },
+      {
+        "id": "89df",
+        "nom": "GALé",
+        "telephone": "776666666",
+        "adresse": "FAdia",
+        "dettes": []
       }
     ]
   }
-  
